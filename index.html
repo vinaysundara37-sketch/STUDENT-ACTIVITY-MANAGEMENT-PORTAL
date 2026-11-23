@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Activity Management Portal">
+    <meta name="theme-color" content="#635bdb">
+    <title>CampusHub | Student Activity Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<aside class="sidebar">
+    <h2>Campus<span>Hub</span></h2>
+    <p class="side-label">WORKSPACE</p>
+
+    <nav>
+        <a class="active" href="index.html">▦ Overview</a>
+        <a href="#events">◷ Activities & Events</a>
+        <a href="registration.html">＋ Register for Event</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <h3>Need help?</h3>
+        <p>Have questions about campus activities?</p>
+        <a href="mailto:activities@campus.edu">Contact support</a>
+    </div>
+</aside>
+
+<main id="main" class="main-content">
+
+    <header class="topbar">
+        <p>Workspace / <strong>Overview</strong></p>
+        <span>● Campus is active</span>
+    </header>
+
+    <section class="welcome">
+        <div>
+            <p class="eyebrow">YOUR CAMPUS STARTS HERE</p>
+            <h1>Good things happen <span>when you show up.</span></h1>
+            <p>Discover activities, find your people and make your campus experience count.</p>
+        </div>
+        <a href="registration.html" class="btn">+ Register Now</a>
+    </section>
+
+    <section class="stats" aria-label="Activity statistics">
+
+        <article class="stat-card">
+            <p>Total Activities</p>
+            <h2>6</h2>
+            <small>Available campus events</small>
+        </article>
+
+        <article class="stat-card">
+            <p>My Registrations</p>
+            <h2 id="registrationCount">0</h2>
+            <small>Your registered activities</small>
+        </article>
+
+        <article class="stat-card">
+            <p>Upcoming Events</p>
+            <h2>4</h2>
+            <small>Events this month</small>
+        </article>
+
+    </section>
+
+    <section id="events" class="events-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">DISCOVER CAMPUS</p>
+                <h2>Featured Activities</h2>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-pill selected" data-filter="All">All</button>
+            <button class="filter-pill" data-filter="Workshop">Workshops</button>
+            <button class="filter-pill" data-filter="Cultural">Cultural</button>
+            <button class="filter-pill" data-filter="Sports">Sports</button>
+        </div>
+
+        <div class="events-grid">
+
+            <article class="event-card" data-category="Workshop">
+                <div class="event-art blue">⌘</div>
+                <div class="event-body">
+                    <p class="category">WORKSHOP · NOV 26</p>
+                    <h3>Future Skills Lab</h3>
+                    <p>Explore practical skills and creative technology.</p>
+                    <a href="registration.html?event=Future%20Skills%20Lab">Join Event →</a>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Cultural">
+                <div class="event-art pink">✳</div>
+                <div class="event-body">
+                    <p class="category">CULTURAL · NOV 28</p>
+                    <h3>Rhythm & Roots</h3>
+                    <p>Celebrate music, dance and creativity.</p>
+                    <a href="registration.html?event=Rhythm%20%26%20Roots">Join Event →</a>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Sports">
+                <div class="event-art green">↗</div>
+                <div class="event-body">
+                    <p class="category">SPORTS · DEC 02</p>
+                    <h3>Campus Sports Meet</h3>
+                    <p>Participate in exciting campus competitions.</p>
+                    <a href="registration.html?event=Campus%20Sports%20Meet">Join Event →</a>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Workshop">
+                <div class="event-art yellow">⌁</div>
+                <div class="event-body">
+                    <p class="category">WORKSHOP · DEC 05</p>
+                    <h3>Design Thinking Sprint</h3>
+                    <p>Turn everyday problems into creative ideas.</p>
+                    <a href="registration.html?event=Design%20Thinking%20Sprint">Join Event →</a>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Cultural">
+                <div class="event-art purple">✺</div>
+                <div class="event-body">
+                    <p class="category">CULTURAL · DEC 09</p>
+                    <h3>Open Mic Evening</h3>
+                    <p>Show your talent through music and poetry.</p>
+                    <a href="registration.html?event=Open%20Mic%20Evening">Join Event →</a>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Sports">
+                <div class="event-art orange">◎</div>
+                <div class="event-body">
+                    <p class="category">SPORTS · DEC 12</p>
+                    <h3>Wellness Walk</h3>
+                    <p>Enjoy a healthy and refreshing campus walk.</p>
+                    <a href="registration.html?event=Wellness%20Walk">Join Event →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 CampusHub | Student Activity Management Portal</p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

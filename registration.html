@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for university campus activities">
+    <meta name="theme-color" content="#635bdb">
+    <title>Student Registration | CampusHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<aside class="sidebar">
+    <h2>Campus<span>Hub</span></h2>
+    <p class="side-label">WORKSPACE</p>
+    <nav>
+        <a href="index.html">▦ Overview</a>
+        <a href="index.html#events">◷ Activities & Events</a>
+        <a class="active" href="registration.html">＋ Register for Event</a>
+    </nav>
+</aside>
+
+<main id="main" class="main-content">
+
+    <header class="topbar">
+        <p><a href="index.html">Workspace</a> / Registration</p>
+        <span>● Campus is active</span>
+    </header>
+
+    <section class="welcome">
+        <div>
+            <p class="eyebrow">MAKE IT HAPPEN</p>
+            <h1>Save your <span>spot.</span></h1>
+            <p>Complete the form to register for a campus activity.</p>
+        </div>
+    </section>
+
+    <section class="form-container">
+
+        <div class="form-card">
+
+            <h2>Student Registration</h2>
+            <p>Enter your details below.</p>
+
+            <form id="registrationForm">
+
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="studentId">Student ID *</label>
+                <input type="text" id="studentId" name="studentId"
+                       placeholder="Enter your student ID" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="department">Department *</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option>Artificial Intelligence and Data Science</option>
+                    <option>Computer Science and Engineering</option>
+                    <option>Electronics and Communication</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="event">Choose Activity *</label>
+                <select id="event" name="event" required>
+                    <option value="">Select Activity</option>
+                    <option>Future Skills Lab</option>
+                    <option>Rhythm & Roots</option>
+                    <option>Campus Sports Meet</option>
+                    <option>Design Thinking Sprint</option>
+                    <option>Open Mic Evening</option>
+                    <option>Wellness Walk</option>
+                </select>
+
+                <fieldset>
+                    <legend>Participation Type *</legend>
+
+                    <label class="choice">
+                        <input type="radio" name="participation"
+                               value="Individual" required>
+                        Individual
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="participation"
+                               value="Team">
+                        Team
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests</legend>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interests"
+                               value="Technical">
+                        Technical Activities
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interests"
+                               value="Cultural">
+                        Cultural Activities
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interests"
+                               value="Sports">
+                        Sports Activities
+                    </label>
+                </fieldset>
+
+                <label for="reason">Why do you want to participate?</label>
+                <textarea id="reason" name="reason"
+                          rows="4"
+                          placeholder="Write your reason here..."></textarea>
+
+                <label class="choice">
+                    <input type="checkbox" name="confirmation"
+                           value="yes" required>
+                    I confirm that my information is correct.
+                </label>
+
+                <button type="submit" class="btn">
+                    Submit Registration →
+                </button>
+
+                <p id="formMessage" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CampusHub | Student Activity Management Portal</p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
